@@ -1,11 +1,18 @@
-* {
+html {
+    box-sizing: border-box
+}
+
+*,
+*::before,
+*::after {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    box-sizing: border-box;
+    box-sizing: inherit;
 }
 
 body {
     background-image: url("graphics/footer_lodyas.png");
     background-size: auto;
+    clear: both;
 }
 
 h1 {
@@ -17,8 +24,10 @@ p {
 }
 
 .hello {
-    background: #888;
+    background: #000;
+    color: #FFF;
     text-align: center;
+    border: 1px solid #FFF;
 }
 
 .container {
@@ -26,12 +35,6 @@ p {
     margin: 0 auto;
     padding: 0 10px;
     max-width: 1000px;
-}
-
-.row::before,
-.row::after {
-  display: table;
-  clear: both;
 }
 
 .one,
@@ -65,8 +68,6 @@ p {
 
 .column {
     border: 1px solid #FFF;
-    background: #666;
-    padding: 15px;
-    margin-bottom: 10px;
+    background: #AAA;
 }
 
