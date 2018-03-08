@@ -1,5 +1,11 @@
 * {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("graphics/footer_lodyas.png");
+    background-size: auto;
 }
 
 h1 {
@@ -10,6 +16,57 @@ p {
     font-size: 1rem;
 }
 
-.all {
-    background-image: url("roughbackground.jpg");
+.hello {
+    background: #888;
+    text-align: center;
 }
+
+.container {
+    text-align: center;
+    margin: 0 auto;
+    padding: 0 10px;
+    max-width: 1000px;
+}
+
+.row::before,
+.row::after {
+  display: table;
+  clear: both;
+}
+
+.one,
+.half, 
+.one-third,
+.two-thirds,
+.one-fourth {
+  width: 100%;
+}
+
+@media screen and (min-width: 800px) {
+    .one {
+        width: 100%;
+    }
+    .half {
+        width: calc(100% / 2);
+    }
+    .one-third {
+        width: calc(100% / 3);
+    }
+    .one-fourth {
+        width: calc(100% / 4);
+    }
+    .two-thirds {
+        width: calc(100% / 3 * 2);
+    }
+    .column {
+        float: left;
+    }
+}
+
+.column {
+    border: 1px solid #FFF;
+    background: #666;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+
