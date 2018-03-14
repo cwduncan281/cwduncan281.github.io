@@ -11,10 +11,12 @@ body {
 
 div.maingrid {
     display: grid;
-    grid-template-columns: 50px 50px auto;
-    grid-template-rows: 50px 50px auto 50px;
+    grid-template-columns: 2rem 6rem auto;
+    grid-template-rows: 2rem 6rem auto 4rem;
     grid-gap: 1px;
     background: whitesmoke;
+    height: 100vh;
+    width: 100vw;
 }
 
 .logo {
@@ -28,37 +30,41 @@ div.maingrid {
 }
 
 .titlebar {
-    padding: .2rem 1rem .2rem;
-    box-shadow: 0 4px 4px -2px gray;
-    background: rgb(19, 22, 27);
+    padding: .2rem 2rem;
+    box-shadow: 0 3px 4px -2px #222;
+    background: rgb(24, 28, 32);
 
     grid-column: 3;
     grid-row: 1;
 }
 
 .sidebar {
-
+    background: rgb(38, 44, 54);
+    color: whitesmoke;
 
     grid-column: 1 / span 2;
     grid-row: 3;
 }
 
 .content {
-
+    background: rgb(38, 44, 54);
+    color: whitesmoke;
 
     grid-column: 3;
     grid-row: 2 / span 2;
 }
 
 .footer {
-
+    background: rgb(38, 44, 54);
+    color: whitesmoke;
 
     grid-column: 3;
     grid-row: 4;
 }
 
 .settings {
-
+    background: rgb(24, 28, 32);
+    color: whitesmoke;
 
     grid-column: 1 / span 2;
     grid-row: 4;
