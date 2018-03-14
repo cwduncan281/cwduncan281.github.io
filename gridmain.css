@@ -9,6 +9,11 @@ body {
     background: rgb(38, 44, 54);
 }
 
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
 div.maingrid {
     display: grid;
     grid-template-columns: 2rem 6rem auto;
