@@ -4,5 +4,69 @@
 }
 
 body {
-    background: linear-gradient(45deg, white, black);
+    /*max-width: 1000px;*/
+    margin: 0 auto;
+    background: rgb(38, 44, 54);
+}
+
+div.maingrid {
+    display: grid;
+    grid-template-columns: 50px 50px auto;
+    grid-template-rows: 50px 50px auto 50px;
+    grid-gap: 1px;
+    background: whitesmoke;
+}
+
+.logo {
+    display: flex;
+    background: rgb(0,0,0);
+    justify-content: center;
+    align-items: center;
+
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 2;
+}
+
+.titlebar {
+    padding: .2rem 1rem .2rem;
+    box-shadow: 0 4px 4px -2px gray;
+    background: rgb(19, 22, 27);
+
+    grid-column: 3;
+    grid-row: 1;
+}
+
+.sidebar {
+
+
+    grid-column: 1 / span 2;
+    grid-row: 3;
+}
+
+.content {
+
+
+    grid-column: 3;
+    grid-row: 2 / span 2;
+}
+
+.footer {
+
+
+    grid-column: 3;
+    grid-row: 4;
+}
+
+.settings {
+
+
+    grid-column: 1 / span 2;
+    grid-row: 4;
+}
+
+#title {
+    font-size: 1.6rem;
+    color: whitesmoke;
+    margin: 0;
+    padding: 0;
 }
